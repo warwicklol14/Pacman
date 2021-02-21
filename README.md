@@ -235,8 +235,8 @@
         Downloads a package from the official repos.
     <details>
     <summary>Click to see example</summary>
-    [sudo] password for username: 
     $ sudo pacman -Sw xclip </br>
+    [sudo] password for username: 
 
     resolving dependencies...
 
