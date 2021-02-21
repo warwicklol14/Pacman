@@ -296,3 +296,22 @@
     </details>
 
 
+## Upgrading (-U)
+
+1. `pacman -U <file name>`
+
+        Adds a file package to the database and installs it.
+    <details>
+    <summary>Click to see example</summary>
+    $ sudo pacman -U teamviewer-15.14.5-1-x86_64.pkg.tar.zst </br>
+    [sudo] password for username: </br>
+    loading packages...</br>
+    resolving dependencies...</br>
+    looking for conflicting packages...</br>
+
+    Packages (1) teamviewer-15.14.5-1</br>
+
+    Total Installed Size:  68.97 MiB</br>
+
+    :: Proceed with installation? [Y/n] </br>
+    </details>
