@@ -118,3 +118,146 @@
 
     </details>
 
+## Syncing (-S)
+
+1. `pacman -S <package name>`
+
+        Installs the specified package from official repos.
+    <details>
+    <summary>Click to see example</summary>
+    $ sudo pacman -S xclip </br>
+    [sudo] password for username: 
+    resolving dependencies...
+    looking for conflicting packages...
+
+    Packages (1) xclip-0.13-3
+
+    Total Installed Size:  0.03 MiB
+    Net Upgrade Size:      0.00 MiB
+
+    :: Proceed with installation? [Y/n]
+    </details>
+
+2. `pacman -Ss <regexp>`
+
+        Searches for packages using a regular expression in the local repo. 
+    <details>
+    <summary>Click to see example</summary>
+    $ pacman -Ss clip </br>
+    extra/eclipse-ecj 4.6.3-2 </br>
+    &nbsp;&nbsp;&nbsp;&nbsp;Eclipse java bytecode compiler </br>
+    extra/gpaste 3.38.5-1 </br>
+    &nbsp;&nbsp;&nbsp;&nbsp;Clipboard management system </br>
+    extra/xclip 0.13-3 [installed] </br>
+    &nbsp;&nbsp;&nbsp;&nbsp;Command line interface to the X11 clipboard </br>
+    extra/xfce4-clipman-plugin 1.6.1-1 (xfce4-goodies) </br>
+    &nbsp;&nbsp;&nbsp;&nbsp;A clipboard plugin for the Xfce4 panel </br>
+    extra/xorg-xclipboard 1.1.3-3 </br>
+    &nbsp;&nbsp;&nbsp;&nbsp;X clipboard manager </br>
+    </details>
+
+
+3. `pacman -Syu`
+
+        Refresh sync databases and upgrade packages.
+    <details>
+    <summary>Click to see example</summary>
+    $ sudo pacman -Syu</br>
+    [sudo] password for username: </br>
+    :: Synchronizing package databases...</br>
+    core is up to date</br>
+    extra is up to date</br>
+    community is up to date</br>
+    multilib is up to date</br>
+    :: Starting full system upgrade...</br>
+    there is nothing to do</br>
+
+4. `pacman -Si <package name>`
+
+        Outputs verbose information about the found package in the official repos.
+    <details>
+    <summary>Click to see example</summary>
+    $ pacman -Si xclip </br>
+    Repository : extra </br>
+    Name : xclip </br>
+    Version : 0.13-3 </br>
+    Description : Command line interface to the X11 clipboard </br>
+    Architecture : x86_64 </br>
+    URL : https://github.com/astrand/xclip </br>
+    Licenses : GPL </br>
+    Groups : None </br>
+    Provides : None </br>
+    Depends On : libxmu </br>
+    Optional Deps : None </br>
+    Conflicts With : None </br>
+    Replaces : None </br>
+    Download Size : 14.98 KiB </br>
+    Installed Size : 34.39 KiB </br>
+    Packager : Felix Yan <felixonmars@archlinux.org> </br>
+    Build Date : Sat 16 May 2020 03:56:14 PM UTC </br>
+    Validated By : MD5 Sum SHA-256 Sum Signature </br>
+    </details>
+
+5. `pacman -Sg <group name>`
+
+        Lists all the packages that are in a group.
+    <details>
+    <summary>Click to see example</summary>
+    $ pacman -Sg base-devel</br>
+    base-devel autoconf </br>
+    base-devel automake </br>
+    base-devel binutils </br>
+    base-devel bison </br>
+    base-devel fakeroot </br>
+    base-devel file </br>
+    base-devel findutils </br>
+    base-devel flex </br>
+    base-devel gawk </br>
+    base-devel gcc </br>
+    base-devel gettext </br>
+    base-devel grep </br>
+    base-devel groff </br>
+    base-devel gzip </br>
+    base-devel libtool </br>
+    base-devel m4 </br>
+    base-devel make </br>
+    base-devel pacman </br>
+    base-devel patch </br>
+    base-devel pkgconf </br>
+    base-devel sed </br>
+    base-devel sudo </br>
+    base-devel texinfo </br>
+    base-devel which </br>
+    </details>
+
+6. `pacman -Sw <package name>`
+
+        Downloads a package from the official repos.
+    <details>
+    <summary>Click to see example</summary>
+    [sudo] password for username: 
+    $ sudo pacman -Sw xclip </br>
+
+    resolving dependencies...
+
+    Packages (1) xclip-0.13-3
+
+    Total Download Size:  0.00 MiB
+
+    :: Proceed with download? [Y/n] 
+    </details>
+
+7. `pacman -Sc`
+
+        Removes packages from local cache
+    <details>
+    <summary>Click to see example</summary>
+    $ sudo pacman -Sc</br>
+    [sudo] password for username: </br>
+    Packages to keep:</br>
+    All locally installed packages</br>
+
+    Cache directory: /var/cache/pacman/pkg/</br>
+    :: Do you want to remove all other packages from cache? [Y/n]</br>
+    </details>
+
