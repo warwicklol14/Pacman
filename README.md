@@ -249,7 +249,7 @@
 
 7. `pacman -Sc`
 
-        Removes packages from local cache
+        Removes packages from local cache.
     <details>
     <summary>Click to see example</summary>
     $ sudo pacman -Sc</br>
@@ -260,4 +260,39 @@
     Cache directory: /var/cache/pacman/pkg/</br>
     :: Do you want to remove all other packages from cache? [Y/n]</br>
     </details>
+
+## Removing (-R)
+
+1. `pacman -R <package name>`
+
+        Removes/Uninstalls the specified package.
+    <details>
+    <summary>Click to see example</summary>
+    $ sudo pacman -R plex-media-player</br>
+    [sudo] password for username: </br>
+    checking dependencies...
+
+    Packages (1) plex-media-player-2.58.0-4
+
+    Total Removed Size:  33.42 MiB
+
+    :: Do you want to remove these packages? [Y/n]
+    </details>
+
+2. `pacman -Rs <package name>`
+
+        Removes/Uninstalls the specified package along with it's dependencies which are not required by other packages.
+    <details>
+    <summary>Click to see example</summary>
+    $ sudo pacman -Rs plex-media-player</br>
+    [sudo] password for username: </br>
+    checking dependencies...
+
+    Packages (8) libcec-6.0.2-1  mpv-1:0.33.0-4  mujs-1.0.9-1  p8-platform-2.1.0.1-4  rubberband-1.9-1  uchardet-0.0.7-1  vamp-plugin-sdk-2.10.0-1  plex-media-player-2.58.0-4
+
+    Total Removed Size:  42.56 MiB
+
+    :: Do you want to remove these packages? [Y/n]
+    </details>
+
 
