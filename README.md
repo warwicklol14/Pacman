@@ -4,7 +4,7 @@
 
 1. `pacman -Q <package name>`
 
-    Outputs name of the found package in the local repo and it's current installed version. 
+        Outputs name of the found package in the local repo and it's current installed version. 
     <details>
     <summary>Click to see example</summary>
     $ pacman -Q xclip </br>
@@ -13,7 +13,7 @@
 
 2. `pacman -Qi <package name>`
 
-    Outputs verbose information about the found package in the local repo.
+        Outputs verbose information about the found package in the local repo.
     <details>
     <summary>Click to see example</summary>
     $ pacman -Qi xclip </br>
@@ -42,7 +42,7 @@
 
 3. `pacman -Ql <package name>`
 
-    Lists the files installed by the found package in the local repo.
+        Lists the files installed by the found package in the local repo.
     <details>
     <summary>Click to see example</summary>
     $ pacman -Ql xclip </br>
@@ -61,7 +61,7 @@
 
 4. `pacman -Qo <file>`
 
-    Outputs the package which owns the specified file.
+        Outputs the package which owns the specified file.
     <details>
     <summary>Click to see example</summary>
     $ pacman -Qo /usr/include/SDL2/SDL.h </br>
@@ -70,7 +70,7 @@
 
 5. `pacman -Qe`
 
-    Outputs the explicitly installed packages.
+        Outputs the explicitly installed packages.
     <details>
     <summary>Click to see example</summary>
     $ pacman -Qe </br>
@@ -90,7 +90,7 @@
 
 6. `pacman -Qm`
 
-    Outputs the foreign packages such as those installed from AUR (Arch User Repo)
+        Outputs the foreign packages such as those installed from AUR (Arch User Repo)
     <details>
     <summary>Click to see example</summary>
     $ pacman -Qm</br>
@@ -100,7 +100,7 @@
 
 7. `pacman -Qdt`
 
-    Outputs the orphan packages (packages that were installed as dependencies but are no longer needed)
+        Outputs the orphan packages (packages that were installed as dependencies but are no longer needed)
     <details>
     <summary>Click to see example</summary>
     $ pacman -Qdt</br>
@@ -109,7 +109,7 @@
 
 8. `pacman -Qs <regexp>`
 
-    Searches for packages using a regular expression in the local repo.
+        Searches for packages using a regular expression in the local repo.
     <details>
     <summary>Click to see example</summary>
     $ pacman -Qs clip</br>
